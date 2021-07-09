@@ -10,3 +10,5 @@ class Article(NamedTuple):
     site_name: str
     snippet: str
     url: str
+    sentiment: float
+    summary: str
