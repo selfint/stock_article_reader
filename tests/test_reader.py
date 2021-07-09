@@ -10,7 +10,7 @@ API_KEY = os.environ.get("apikey")
 # create reader and get articles once
 # since fmp api bills by call
 r = Reader(API_KEY)
-articles = r._get_articles(
+articles = r.get_articles(
     "aapl",
     limit=10,
     ignore_sources=["zacks investment research", "pymnts", "investorplace"],
